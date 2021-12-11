@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h3>APPLY FOR A JOB IN THE PARKS AND RECREATION DEPARTMENT IN OZONE PARK</h3>
+<h3>TELL US ABOUT YOU SKILLS!</h3>
 <p>
   <strong>Firstname:</strong>
   <%= @resume.firstname %>
@@ -52,17 +52,16 @@
 
 
 <h3><b>Applicant Information</b></h3>
-<p><b>First Name: </b><i><%= @resume.firstname %></i></p>
-<p><b>Last Name:</b> <i><%= @resume.lastname %></i></p>
-<p><b>Role Applied For: </b></i><%= @resume.role %></p>
-<p><b>Location Applied to: </b></i><%= @resume.location %></p>
-<p><b>E-mail: </b></i><%= @resume.email %></p>
-<p><b>Phone Number: </b></i><%= @resume.phone %></p>
-
+<p><b>First Name:</b><%= @resume.firstname %></p>
+<p><b>Last Name:</b><%= @resume.lastname %></p>
+<p><b>Role Applied For:</b><%= @resume.role %></p>
+<p><b>Location Applied to:</b><%= @resume.location %></p>
+<p><b>E-mail:</b><%= @resume.email %></p>
+<p><b>Phone Number:</b><%= @resume.phone %></p>
 <br>
-          
+
 <h3><b>Applicant Skill Percentages</b></h3>
-<p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i></b></p>
+<p class="w3-small"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i></b></p>
   <% @resume.skills.each do |skill| %>
       <p><%= skill.skill_title %></p>
       <div class="w3-light-grey w3-round-xlarge w3-small">
